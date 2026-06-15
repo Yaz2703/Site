@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exhaust Design — Yazan Salloum</title>
 <link rel="stylesheet" href="style.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
 <div class="page">
@@ -22,13 +23,89 @@
 
 <article>
   <h1>Exhaust Design</h1>
-  <p>Design and analysis of the powertrain exhaust system, balancing performance, packaging, and manufacturability within Formula Student regulations.</p>
+  <h2>Exhaust Design Process</h2>
+  <p>This process required the creation of multiple iterations of the different exhaust components. </p>
+  <p>I constructed the CAD, then ran computational fluid dynamics simulations via StarCCM+ and Ansys Fluent, making adjustments along the way. </p>
+  <p>Finally, the design was brought to life and installed on QMFS's car, bringing required performance gains. </p>
+  <h2>Headers</h2>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/headers_1.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Iteration 1</h3>
+      <p>First iteration of the exhaust header. Primary constraints were packaging and ensuring equal header length. As such, the design was not meant to be optimal, but instead give a rough idea of how the package will look like.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/headers_2.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Iteration 2</h3>
+      <p>Design after first round of optimisation. Bends were made wider, and overall package size was made smaller to accomodate the presence of other components around the powertrain system.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/exhaust_headers.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Final Design</h3>
+      <p>Design after final improvements were made. Packaging revised to decrease overall volume, flanges constructed to interface with engine, and overall design was smoothed out and optimised to further reduce pressure loss along the exhaust system. </p>
+    </div>
+  </div>
+  <model-viewer
+  src="https://yaz2703.github.io/3D-Modelling/Exhaust_Manifold.glb"
+  alt="Formula Student exhaust system"
+  camera-controls auto-rotate
+  environment-image="https://yaz2703.github.io/3D-Modelling/studio_small_03_4k.hdr"
+  shadow-intensity="1.2"
+  exposure="1.1" tone-mapping="aces">
+  </model-viewer>
 
-  <!-- TODO: replace the placeholder below with the full write-up.
-       Suggested structure (same as the spectrometer page):
-       Problem -> My role -> Approach -> Results -> images/3D model -->
-  <p style="color:var(--grey);">Full write-up coming soon.</p>
+  <h2>Collector</h2>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/collector_1.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Iteration 1</h3>
+      <p>A 4-1 collector design was chosen instead of a 4-2-1 design, in order to save weight, and for performance gains due to the package aiming to optimise power at high RPM instead of focusing on getting power all throughout the rev range.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/collector_2.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Iteration 2</h3>
+      <p>Revised design to reflect the changes made to the exhaust header geometry. The design was also made longer in order to increase efficiency, however that change was reverted for the final iteration as seen below.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="img">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/exhaust_collector.png" alt="Description">
+    </div>
+    <div class="text">
+      <h3>Final Design</h3>
+      <p>Final iteration of exhaust collector designed, with an interface designed to lock the exhaust collector to the primaries via a high-stiffness spring. The design was made more compact to save more space, measuring only 100mm in total length.</p>
+    </div>
+  </div>
+
+  <model-viewer
+  src="https://yaz2703.github.io/3D-Modelling/Exhaust_Collector.glb"
+  alt="Formula Student exhaust system"
+  camera-controls auto-rotate
+  environment-image="https://yaz2703.github.io/3D-Modelling/studio_small_03_4k.hdr"
+  shadow-intensity="1.2"
+  exposure="1.1" tone-mapping="aces">
+  </model-viewer>
+
 </article>
+
+
+
 
 <footer>© 2026 Yazan Salloum</footer>
 

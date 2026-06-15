@@ -23,23 +23,30 @@
 
 <article>
   <h1>Femoral Fracture Fixation Device</h1>
-  <p>Design of an intramedullary nail for femoral fracture fixation — a titanium implant balancing mechanical strength with anatomical fit.</p>
+  <p>Design of an intramedullary nail for femoral fracture fixation. This project was a coursework I undertook during my final year, where my group was tasked in developing a fixation device for a young active female who suffered a femoral fracture. I was responsible for designing the fixation device using CAD software, choosing the optimal materials and coatings, and then validating that design's effectiveness and strength through finite element analysis.</p>
+  <div class="row">
+    <div class="img">
+      <model-viewer
+        src="https://yaz2703.github.io/3D-Modelling/IM_Nail.glb"
+        alt="Intramedullary nail"
+        style="height:900px;"
+        camera-controls auto-rotate
+        environment-image="https://yaz2703.github.io/3D-Modelling/studio_small_03_4k.hdr"
+        shadow-intensity="1"
+        exposure="1.1" tone-mapping="aces">
+      </model-viewer>
+      <p class="mvcap">Drag to rotate, scroll to zoom.</p>
+    </div>
+    <div class="text">
+      <h3>The Design</h3>
+      <p>The final design was a reamed intramedullary nail, with the material of choice being PEEK-CF40. This was due to this material having similar stiffness to surrounding bone tissue, reducing the likelihood of stress shielding occurring. The design contains various titanium locking screws that secure it to the bone. </p>
+      <h3>Coating Choice</h3>
+      <p>The proposed IM nail design is to be coated with PDLLA, which is used as a medium to deliver bone morphogenic proteins, accelerating the healing process via controlled introduction of rh-BMP2 into the fracture site. Furthermore, the coating is bioresorbable, so it would not compromise the mechanical integrity of the nail. </p>
+      <h3>Finite Element Analysis</h3>
+      <p>Finite element analysis revealed minimal deformation of the implant while bearing load equal to 3x the patient's estimated bodyweight, mirroring the load that the implant would be subjected to during regular gait cycles. The minimal movement of the implant (approximately 20-25 microns) introduces micromotions that are considered to provide improved healing mechanics via secondary bone healing.</p>
 
-  <!-- Interactive model: confirmed filename in your repo -->
-  <model-viewer
-    src="https://yaz2703.github.io/3D-Modelling/IM_Nail.glb"
-    alt="Intramedullary nail"
-    camera-controls auto-rotate
-    environment-image="neutral"
-    shadow-intensity="1.2"
-    exposure="1.1" tone-mapping="aces">
-  </model-viewer>
-  <p class="mvcap">Drag to rotate, scroll to zoom.</p>
-
-  <!-- TODO: replace the placeholder below with the full write-up.
-       Suggested structure (same as the spectrometer page):
-       Problem -> My role -> Approach -> Results -> images/3D model -->
-  <p style="color:var(--grey);">Full write-up coming soon.</p>
+    </div>
+  </div>
 </article>
 
 <footer>© 2026 Yazan Salloum</footer>

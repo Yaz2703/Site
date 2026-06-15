@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smartphone Spectrometer — Yazan Salloum</title>
+<title>Dissertation: Mobile Phone Spectrometer Housing Design — Yazan Salloum</title>
 <link rel="stylesheet" href="style.css">
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
@@ -22,53 +22,52 @@
 <a class="back" href="index.html#projects">&larr; All projects</a>
 
 <article>
-  <h1>Dissertation: Smartphone Spectrometer Housing Design</h1>
+  <h1>Dissertation: Mobile Phone Spectrometer Housing Design</h1>
 
-  <h2>The problem</h2>
-  <p>Conventional lab-based spectrometers — while very effective analytical tools — are expensive, bulky, and non-portable. They also require trained professionals to operate, and cost anywhere from £1,000 to well over £20,000. This combination of factors makes them unviable for use in classrooms, households, and economically disadvantaged areas, leaving a very useful piece of technology inaccessible to a large portion of the population. As such, this project set out to close that gap by leveraging the universal presence of smartphones to deliver a compact, handheld spectrometer for the visible wavelength range — providing adequate image processing while remaining cost-effective. With that in mind, we defined four main design goals for the device:</p>
+  <h2>The Problem</h2>
+  <p>Conventional lab-based spectrometers — while very effective analytical tools — are expensive, bulky, and non-portable. They also require trained professionals to operate, and cost anything from £1,000 to over £20,000. This combination of factors makes them unviable for use in classrooms, households, and economically disadvantaged areas, leaving a very useful piece of technology inaccessible to a large portion of the population. As such, this project set out to close that gap by leveraging the universal presence of smartphones to deliver a compact, handheld spectrometer for the visible wavelength range — providing adequate image processing while remaining cost-effective. With that in mind, we defined four main design goals for the device:</p>
   <ol>
     <li>Total price under £200, allowing individuals in less advantaged areas to access the device</li>
-    <li>Total weight under 150 g, allowing the device to be carried comfortably for long periods</li>
+    <li>Total weight under 150 g, allowing the device to be carried comfortably for extended periods of time</li>
     <li>Wavelength range of 400–700 nm, targeting the visible spectral range</li>
     <li>Spectral resolution equal to or better than 0.42 nm per pixel, comparable to examples in relevant literature</li>
   </ol>
 
-  <h2>My role</h2>
-  <p>The project was split into several workstreams: App Development (back end and front end), Sample Testing, and Optical System Design (Optical Layout and Housing). My role was to design the spectrometer housing that contains all the internal components, along with the chosen smartphone itself. This required collaboration between myself and the Optical Layout lead in order to decide on the components that would best fit our design goals. Because of that, I was required to create an optimised housing design using both CAD and simulation software, and then translate that design into a functional prototype for real-world validation.</p>
+  <h2>My Role</h2>
+  <p>The project was split into several workstreams: App Development (back end and front end), Sample Testing, and Optical System Design (Optical Layout and Housing). My role was to design the spectrometer housing that contains all the internal components, along with the chosen smartphone itself. This required collaboration between myself and the Optical Layout lead in order to decide on the components that would best fit our design goals. After the component choices were finalised, I was required to create an optimised housing design, which required the usage of both CAD and simulation software, and then translate that design into a functional prototype for real-world validation.</p>
 
   <h2>Methodology</h2>
   <p>To begin, preliminary CAD of the housing was created in Autodesk Fusion to assess the feasibility of using reflective versus transmission diffraction gratings, with the decision ultimately favouring the transmission grating. Candidate materials were then evaluated in Granta EduPack; multiple options were considered, but PLA was ultimately chosen for its low density, high stability during printing, low cost, and favourable mechanical properties, aligning well with the design requirements. With the housing material and internal components selected (a 200-micron SMA905 fibre optic, a 1000 line/mm transmission grating, and two 5 mm diameter SMA905 collimators), the design was refined through simulation-driven decisions — recreating the layout in Zemax OpticStudio to evaluate its optical performance. Iterations that produced satisfactory simulation results were printed and tested in real-world conditions to assess their viability and resolve any fit and finish issues.</p>
-
-  <h2>The design</h2>
-  <!-- TODO: confirm this GLB filename matches your repo -->
-  <model-viewer
-    src="https://yaz2703.github.io/3D-Modelling/Spectrometer.glb"
-    alt="Smartphone spectrometer housing"
-    camera-controls auto-rotate
-    environment-image="neutral"
-    shadow-intensity="1.2"
-    exposure="1.1" tone-mapping="aces">
-  </model-viewer>
-  <p class="mvcap">Drag to rotate, scroll to zoom — final housing design.</p>
 
   <h2>Results</h2>
   <table>
     <thead><tr><th>Goal</th><th>Target</th><th>Result</th><th></th></tr></thead>
     <tbody>
-      <tr><td>Unit cost</td><td>&lt; £200</td><td>£182.21</td><td class="met">met</td></tr>
-      <tr><td>Weight</td><td>&lt; 150 g</td><td>70 g</td><td class="met">met</td></tr>
-      <tr><td>Spectral resolution</td><td>&le; 0.42 nm/px</td><td>0.18 nm/px</td><td class="met">met</td></tr>
-      <tr><td>Spectral range</td><td>300 nm</td><td>216 nm</td><td class="part">partial</td></tr>
+      <tr><td>Unit cost</td><td>&lt; £200</td><td>£182.21</td><td class="met">Met</td></tr>
+      <tr><td>Weight</td><td>&lt; 150 g</td><td>70 g</td><td class="met">Met</td></tr>
+      <tr><td>Spectral resolution</td><td>&le; 0.42 nm/pixel</td><td>0.18 nm/pixel</td><td class="met">Met</td></tr>
+      <tr><td>Spectral range</td><td>300 nm</td><td>216 nm</td><td class="part">Partial</td></tr>
     </tbody>
   </table>
 
-  <p style="margin-top:20px;">The housing accomplished most of its design goals: it met its cost and weight targets while outperforming the targeted spectral resolution. However, it only partially met its spectral range target, with a loss of signal in the blue range of the spectrum as shown in the image below — attributable to slight fibre misalignment caused by 3D-printing tolerances. Despite this, the project showed significant promise, proving that it is possible to create cost-effective optical analysis instruments without necessarily compromising performance.</p>
+  <p style="margin-top:20px;">The housing was able to accomplish most of its design goals: it met its cost and weight targets, while also outperforming the targeted spectral resolution. However, it only partially met its spectral range target, with loss of signal in the blue range of the spectrum as shown in the image below. This can be attributed to printing inaccuracies which would cause misalignment of the optical layout. Despite that, the project showed significant promise, proving that it is possible to create cost-effective optical analysis instruments without necessarily compromising performance.</p>
 
-  <!-- TODO: upload your captured-spectrum figure to the repo and update the src -->
   <figure>
-    <img src="https://yaz2703.github.io/3D-Modelling/figures/spectrum_result.jpg" alt="Captured spectrum showing loss of signal in the blue range" onerror="this.style.display='none';this.nextElementSibling.textContent='[ Add captured-spectrum figure here — figures/spectrum_result.jpg ]'">
+    <img src="https://yaz2703.github.io/3D-Modelling/spectrum.png" alt="Captured spectrum showing loss of signal in the blue range" onerror="this.style.display='none';this.nextElementSibling.textContent='[ Add captured-spectrum figure here — figures/spectrum_result.jpg ]'">
     <figcaption>Captured spectrum, showing the loss of signal toward the blue end of the range.</figcaption>
-  </figure>
+  </figure>  
+
+  <h2>The Design</h2>
+  <model-viewer
+    src="https://yaz2703.github.io/3D-Modelling/Spectrometer.glb"
+    alt="Smartphone spectrometer housing"
+    camera-controls auto-rotate
+    environment-image="https://yaz2703.github.io/3D-Modelling/studio_small_03_4k.hdr"
+    shadow-intensity="0.8"
+    exposure="1.3" tone-mapping="aces">
+  </model-viewer>
+  <p class="mvcap">Drag to rotate, scroll to zoom — final housing design.</p>
+
 </article>
 
 <footer>© 2026 Yazan Salloum</footer>
