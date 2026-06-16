@@ -22,12 +22,41 @@
 
 <article>
   <h1>EMG Signal Analysis</h1>
-  <p>Processing and analysis of electromyography signals — filtering, feature extraction, and interpretation of muscle-activation data in Python.</p>
-
-  <!-- TODO: replace the placeholder below with the full write-up.
-       Suggested structure (same as the spectrometer page):
-       Problem -> My role -> Approach -> Results -> images/3D model -->
-  <p style="color:var(--grey);">Full write-up coming soon.</p>
+  <p>This project required me to take EMG recordings from a variety of muscles during different exercises. For the purposes of my report, I decided to measure how EMG readings differ in the clavicular and sternal heads of the pectoralis major when performing different variations of the pushup exercise. This included flat, incline, and decline pushups. The experiment was run with two different test subjects, with a third to control timing of movement to minimise inaccuracies that could arise due to differences in exercise performance pace.</p>
+  <p>After recording, the data was stored in a CSV file and subsequently exported and analysed through MATLAB. This allowed for the ability to distinguish between concentric, eccentric, and isometric contraction phases for each of the performed exercises across both subjects.</p>
+  <figure>
+    <div class="imgpair stack">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg.jpg" alt="...">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg2.jpg" alt="...">
+    </div>
+    <figcaption>Figures showing the raw EMG signal data, along with the different contraction phases that occur while performing inclined pushups, compared across both subjects.</figcaption>
+  </figure>
+  <p>To refine the data, recorded signals were run through a bandpass filter and then rectified, allowing for the plotting of mean and maximum values.</p>
+  <figure>
+    <div class="imgpair">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg3.jpg" alt="...">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg4.jpg" alt="...">
+    </div>
+    <figcaption>Figures showing the rectified EMG signals across both subjects, with mean and maximum values plotted.</figcaption>
+  </figure>
+  <p>After rectification, an RMS plot was created with a window length of 100 values to further refine the recorded data.</p>
+  <figure>
+    <div class="imgpair stack">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg5.png" alt="...">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg6.png" alt="...">
+    </div>
+    <figcaption>Plots of the RMS values of the EMG recordings that were taken from both subjects.</figcaption>
+  </figure>
+  <p>After that, to get a clearer idea of the contrast between each subject's contraction phases, the mean rectified values of each contraction phase was plotted on a bar chart against one another for each subject.</p>
+  <figure>
+    <div class="imgpair stack">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg7.jpg" alt="...">
+      <img src="https://yaz2703.github.io/3D-Modelling/thumbs/emg8.jpg" alt="...">
+    </div>
+    <figcaption>Bar charts showing the mean rectified EMG values for the isometric, concentric, and eccentric contraction phases, compared across both subjects.</figcaption>
+  </figure>
+  <p>Finally, a paired t-test was run for the datasets for each of the subjects. This process was repeated two more times, once for the declined pushup, and once for the flat, normal pushup variation.</p>
+  <p>This project was a satisfying entry into the world of data analysis, where I got to work with experimental data and learned how to interpret results.</p>
 </article>
 
 <footer>© 2026 Yazan Salloum</footer>

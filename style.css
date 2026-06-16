@@ -160,3 +160,23 @@ footer{padding:26px 0 40px;font-size:13.5px;color:var(--grey);}
   .row{flex-direction:column;}
   .row .img{flex:0 0 auto;}
 }
+/* standalone image pairs — no link, no hover */
+.imgpair{
+  display:flex;
+  gap:14px;
+  margin:20px 0;
+  align-items:flex-start;
+}
+.imgpair.stack{flex-direction:column;}   /* on top of each other */
+.imgpair img{
+  flex:1;                /* share the space evenly */
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:8px;
+  display:block;
+}
+.imgpair.stack img{flex:0 0 auto;}        /* don't stretch when stacked */
+
+@media (max-width:600px){
+  .imgpair{flex-direction:column;}        /* side-by-side pairs stack on phones */
+}
