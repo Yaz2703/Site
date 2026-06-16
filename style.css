@@ -53,14 +53,14 @@ section:last-of-type{border-bottom:none;}
 /* ---- tiles (hover cards) ---- */
 .tiles{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(225px,1fr));
+  grid-template-columns:1fr;
   gap:16px;
   margin-top:22px;
 }
 .tile{
   position:relative;
   display:flex;align-items:center;justify-content:center;
-  aspect-ratio:16/11;
+  aspect-ratio:16/7;
   background:#fff;
   border:1px solid var(--line);
   border-radius:12px;
@@ -69,8 +69,9 @@ section:last-of-type{border-bottom:none;}
   box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
 .tile img{
-  max-width:80%;max-height:80%;
+  max-width:95%;max-height:95%;
   width:auto;height:auto;object-fit:contain;
+  border-radius:12px;
   transition:opacity .3s ease,transform .3s ease;
 }
 .tile .overlay{
